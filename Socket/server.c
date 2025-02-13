@@ -36,6 +36,9 @@ void  working(void * arg);
 //任务函数 ,用来处理和客户端的连接
 void  acceptConnect(void * arg);
 
+
+
+
 int main()
 {
     //1.创建监听的套接字

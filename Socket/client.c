@@ -27,7 +27,7 @@ int main()
 
     //这里客户端需要绑定到一个实际的ip的地址(就是服务器的ip地址)才能进行通信
     // 本机ip地址 "192.168.232.129" 是小端存储,需要转为大端 , 然后保存到 saddr.sin_addr.s_addr 中
-    inet_pton(AF_INET,"192.168.190.128",&saddr.sin_addr.s_addr);
+    inet_pton(AF_INET,"192.168.0.103",&saddr.sin_addr.s_addr);
 
     int ret = connect(fd,(struct sockaddr*)&saddr, sizeof(saddr));
     
